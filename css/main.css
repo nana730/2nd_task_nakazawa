@@ -1,0 +1,235 @@
+@charset "utf-8";
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  padding-bottom: 75px;
+  min-height: 100%;
+}
+li {
+  list-style: none;
+}
+p, ul {
+  margin: 0;
+  padding: 0;
+}
+div,li {
+  box-sizing: border-box;
+}
+/*footer参考*/
+.header_nav {
+  background: linear-gradient(90deg, #fff 20%, rgba(0,0,0,.6) 60%);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: stretch;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.global_nav_item {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.global_nav_item:hover {
+  background: #fff;
+  color: #42210b;
+}
+.global_nav {
+  display: flex;
+  align-items: stretch;
+}
+.logo {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 100%;
+}
+.section_inner {
+  padding: 50px 10% 30px;
+}
+.key {
+  height: 500px;
+  background: center / cover no-repeat url("../images/sample_key.jpg");
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  /*flexbox使用、子要素の並びは縦、子要素は親要素の中央は位置*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.key h1{
+  font-size: 2.5rem;
+}
+.key_content {
+  align-items: center;
+}
+
+.section_title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.menu_title {
+  display: inline-block;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.5rem;
+  color: #42210b;
+  border-bottom: solid #42210b 1px;
+  margin-bottom: 20px;
+}
+.center {
+  text-align: center;
+}
+.caffee_menu_image {
+  width: 20%;
+  border-radius: 50%;
+}
+.concept_content {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.concept_content p {
+  width: 60%;
+}
+.concept_content img {
+  width: 35%;
+}
+.menu_article {
+  background-image: url(../images/sample_menu_bg.jpg);
+  background-attachment: fixed;
+ background-size: 100%;
+  background-repeat: no-repeat;
+}
+.recommended {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.recommended_content1 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 49%;
+}
+.recommended_content2 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 49%;
+}
+.recommended_content1_1  {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+}
+.recommended_content1_1 h2 {
+  font-family: 'Noto Serif JP', serif;
+}
+.recommended_content2_1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+}
+.recommended_content2_1 h2 {
+  font-family: 'Noto Serif JP', serif;
+}
+.recommended_content1 img {
+  width: 55%;
+}
+.recommended_content2 img {
+  width: 55%;
+}
+.menu_price {
+  color: brown;
+  text-align: right;
+}
+/* cofee menu */
+.coffee_menu_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.coffee_total {
+  background: #fff;
+  padding: 20px;
+}
+
+.concept_content_set { 
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.coffe_back{
+  background-color: #fff;
+}
+.coffee_menu_item { 
+  display: flex;
+  flex-direction: row-reverse;
+  width: 49%;
+  justify-content: center;
+  align-items: center;
+}
+.coffee_menu_name_price {
+  width: 80%;
+}
+.coffee_menu_name_price h2 {
+  font-family: 'Noto Serif JP', serif;
+}
+.coffee_menu_name_price img {
+   width: 20%;
+}
+
+/* access */
+.access {
+  display: flex;
+  flex-direction: row;
+}
+.access dt {
+  width: 80px;
+}
+iframe {
+  width: 100%;
+}
+.footer {
+  background-color: #251e19;
+  width: 100%;
+  position: absolute;
+  height: 75px;
+  bottom: -75px;
+  padding-bottom: 10px;
+}
+.footer_nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.footer_content {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  /*これでも可能*/
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
+  text-decoration: none;
+  padding: 0 10px;
+}
+.footer_logo img {
+  width: 75px;
+}
+.footer_p {
+  color: white;
+  text-align: center;
+  font-size: 13px;
+}
